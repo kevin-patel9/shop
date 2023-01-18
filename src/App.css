@@ -1,0 +1,146 @@
+.product-container {
+    margin: 1.6rem auto;
+    width: 80%;
+    display: grid;
+    align-items: start;
+    gap: .8rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.all-products{
+    width: 16rem;
+    display: grid;
+    gap: 1.4rem;
+    border: 1px solid black;
+    padding: 1rem;
+    position: relative;
+    border-radius: 1rem;
+}
+
+img{
+    width: 6rem;
+    height: 6rem;
+    
+}
+
+.img-container{
+    height: 6rem;
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
+
+h5{
+    font-family: cursive;
+    width: 102%;
+    border-top: 1px black solid;
+    padding-top: 1rem;
+}
+
+.product-category{
+    position: absolute;
+    padding: .4rem;
+    top: 8rem;
+    right: 1rem;
+    color: rgb(255, 255, 255);
+    border-radius: .6rem;
+    text-transform: capitalize;
+    background-color: rgb(99, 99, 255);
+}
+
+button{
+    border-radius: .6rem;
+    border: 1px rgb(175, 196, 255) solid;
+    color: rgb(0, 16, 236);
+    font-size: 1.2rem;
+}
+
+option{
+    text-transform: capitalize;
+}
+
+.pie-button{
+    position: fixed;
+    border-radius: 1rem;
+    background-color: blueviolet;
+    color: white;
+    box-shadow: .4rem .6rem .8rem black;
+    padding: .6rem;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 2;
+}
+
+.pie-graph{
+    margin: auto;
+    background-color: rgb(235, 205, 255);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+
+.close-btn{
+    padding: 0 1rem;
+    font-size: 2rem;
+    border-radius: .8rem;
+    position: absolute;
+    top: 2.6rem;
+    right: 12rem;
+    color: black;
+}
+
+.select{
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 12rem;
+}
+
+.input-value{
+    height: 2rem;
+    margin: 1rem;
+    width: 12rem;
+}
+
+canvas{
+    margin: auto;
+    height: 500px;
+    width: 500px;
+}
+
+.loading{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+    .product-container{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.6rem;
+        row-gap: 1.6rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .product-container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.6rem;
+        row-gap: 1.6rem;
+    }
+    .all-products{
+        width: 18rem;
+    }
+    .close-btn{
+        top: 2.6rem;
+        right: 2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .product-container{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1.6rem;
+        row-gap: 1.6rem;
+        justify-items: center;
+    }
+}
