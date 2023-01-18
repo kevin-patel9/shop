@@ -15,6 +15,7 @@
     padding: 1rem;
     position: relative;
     border-radius: 1rem;
+    box-shadow: .4rem .4rem 1rem rgb(43, 43, 43);
 }
 
 img{
@@ -44,7 +45,7 @@ h5{
     color: rgb(255, 255, 255);
     border-radius: .6rem;
     text-transform: capitalize;
-    background-color: rgb(99, 99, 255);
+    background-color: rgb(84, 124, 255);
 }
 
 button{
@@ -61,12 +62,13 @@ option{
 .pie-button{
     position: fixed;
     border-radius: 1rem;
-    background-color: blueviolet;
+    background-color: rgb(49, 97, 255);
+    /* background-color: rgb(88, 4, 167); */
     color: white;
-    box-shadow: .4rem .6rem .8rem black;
-    padding: .6rem;
-    right: 2rem;
-    bottom: 2rem;
+    box-shadow: .2rem .2rem .8rem black;
+    padding: .8rem;
+    right: 3rem;
+    bottom: 2.8rem;
     z-index: 2;
 }
 
@@ -95,12 +97,16 @@ option{
     margin-top: 1rem;
     margin-left: 1rem;
     width: 12rem;
+    border-radius: .6rem;
 }
 
 .input-value{
+    padding: 1rem;
+    outline: none;
     height: 2rem;
     margin: 1rem;
     width: 12rem;
+    border-radius: .6rem;
 }
 
 canvas{
@@ -133,6 +139,10 @@ canvas{
     }
     .close-btn{
         top: 2.6rem;
+        right: 2rem;
+    }
+
+    .pie-button{
         right: 2rem;
     }
 }

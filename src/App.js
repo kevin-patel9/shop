@@ -83,9 +83,9 @@ import { PieChart } from "./components/piechart";
 
   return (
     <div className="App">
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar style={{backgroundColor: "rgb(84, 124, 255)"}} variant="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="/">Shop</Navbar.Brand>
+          <Navbar.Brand style={{fontSize: "1.6rem", fontWeight: 800, fontFamily: "sans-serif"}} href="/">Shop</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav>
