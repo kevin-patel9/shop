@@ -62,8 +62,7 @@ option{
 .pie-button{
     position: fixed;
     border-radius: 1rem;
-    background-color: rgb(49, 97, 255);
-    /* background-color: rgb(88, 4, 167); */
+    background-color: rgb(88, 4, 167);
     color: white;
     box-shadow: .2rem .2rem .8rem black;
     padding: .8rem;
