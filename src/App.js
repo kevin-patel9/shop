@@ -84,26 +84,28 @@ import { PieChart } from "./components/piechart";
   return (
     <div className="App">
       <Navbar style={{backgroundColor: "rgb(84, 124, 255)"}} variant="dark" expand="lg">
-        <Container>
+        <Container style={{marginRight: "1.2rem", marginLeft: "1rem"}}>
           <Navbar.Brand style={{fontSize: "1.6rem", fontWeight: 800, fontFamily: "sans-serif"}} href="/">Shop</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav>
-              <select className="select" onClickCapture={selectOption}>
+              <select className="select" onChange={selectOption}>
                 <option>all</option>
                 <option>men's clothing</option>
                 <option>jewelery</option>
                 <option>electronics</option>
                 <option>women's clothing</option>
               </select>
-              <input type="text" className="input-value" onChange={e => setQuery(e.target.value)} />
+              <input type="text" className="input-value" placeholder="search for item..." onChange={e => setQuery(e.target.value)} />
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
       {showPie && <div className="pie-graph" >
-        <PieChart chartData={pieCharts} />
+        <div className="pie-chart">
+          <PieChart chartData={pieCharts} />
+        </div>
         <button className="close-btn" onClick={()=> setShowPie(false)}>X</button>
       </div>}
         <button className="pie-button" onClick={() => setShowPie(!showPie)}>ANALYZE</button>
@@ -120,16 +122,16 @@ import { PieChart } from "./components/piechart";
                 return val
               }
 
-          }).filter((val)=>{
+          }).filter((item)=>{
             
             if (category == "all"){
-              return val
+              return item
             }
             else if (category == undefined){
-              return val
+              return item
             }
             else{
-              return val.category == category
+              return item.category == category
             }
           }).map((data) => {
             return (
