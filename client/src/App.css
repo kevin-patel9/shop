@@ -1,0 +1,87 @@
+.movieContainer{
+    margin: auto;
+    height: 30rem;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 26vw;
+    overflow: hidden;
+}
+
+.container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    place-content: center;
+}
+
+.detailContainer>h4{
+    margin-top: .4rem;
+}
+
+.imgContainer{
+    text-align: center;
+    height: 18rem;
+}
+
+img{
+    width: 12rem;
+    height: 18rem;
+}
+
+.language{
+    color: rgb(121, 0, 121);
+    display: flex;
+    gap: .3rem;
+}
+
+.paginationContain{
+    margin-left: 26rem;
+    margin-bottom: 4rem;
+}
+
+.paginationBtn{
+    margin-top: 2rem;
+    margin-right: .6rem ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.previousBtn, .nextBtn{
+    background-color: rgb(147, 0, 160) ;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: .4rem;
+    padding: .4rem;
+}
+
+.previousBtn:hover, .nextBtn:hover {
+    color: rgb(239, 187, 255);
+}
+
+.paginationActive{
+    padding: .2rem .4rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: .4rem;
+    background-color: white ;
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: .8rem;
+    }
+
+    .movieContainer{
+        width: 42vw;
+    }
+
+    .paginationContain{
+        margin-left: 2.4rem;
+    }
+}
